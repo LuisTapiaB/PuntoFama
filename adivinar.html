@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguemos punto y fama</title>
+	<link rel="stylesheet" href="mystyle.css">
+  </head>
+
+  <body>
+    <header>
+      <p id="titulo">Adivina el número</p>
+    </header>
+    <section class="container">
+    <section class="box1">
+    
+      <section class="main">
+        <input type="text" class="entrada" id="entrada" min="0123" max="9999" value="" disabled>
+        <div class="botones">
+          <button id="nuevo" onclick="nuevo()">Juego Nuevo</button>
+          <button id="checar" onclick="evaluar(), comprobar(), listar()" disabled>Intento </button>
+          <button id="rendirse" onclick="rendirse()" disabled>Me rindo </button>
+        </div>
+      </section>
+      <section class="contadores">
+        <div class="puntos">
+          <p>Puntos</p>
+          <p id="ContadorPuntos">0</p>
+        </div>
+        <div class="famas">
+          <p>Famas</p>
+          <p id="contadorfamas">0</p>
+        </div>
+        <div class="intentos">
+          <p>Intento N°: </p>
+          <p id="contadorIntentos" >0</p>
+        </div>
+    
+      </section>
+      <section class="ayuda">
+        <p id="numeroSecreto" >xxxx</p>
+        <div>
+        <label class="tachado" for="checkbox0">0</label>
+        <label class="tachado" for="checkbox1">1</label>
+        <label class="tachado" for="checkbox2">2</label>
+        <label class="tachado" for="checkbox3">3</label>
+        <label class="tachado" for="checkbox4">4</label>
+        <label class="tachado" for="checkbox5">5</label>
+        <label class="tachado" for="checkbox6">6</label>
+        <label class="tachado" for="checkbox7">7</label>
+        <label class="tachado" for="checkbox8">8</label>
+        <label class="tachado" for="checkbox9">9</label>
+        </div>
+      </section>
+    </section>
+    <section class="aside">
+      <p>0000</p>
+      <!--aquí se crean los parrafos o span de intentos-->
+    </section>
+    </section>
+    <script src="myScript.js"></script>
+</body>
+</html>
