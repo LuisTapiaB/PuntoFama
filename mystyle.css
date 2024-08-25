@@ -148,3 +148,8 @@ input.entrada {
 	justify-content: space-between;
 	font-size: 4vmin;
 }
+.line-through {
+	text-decoration: line-through;
+	color: var(--main-color);
+	background-color:var(--last-color);
+}
