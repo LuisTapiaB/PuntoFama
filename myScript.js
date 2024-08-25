@@ -7,6 +7,7 @@ function aleatorioDeTamañoN(n){
 }
 
 function nuevo() {
+  tachar();
   numeroAleatorio = aleatorioDeTamañoN(4);
   console.log(numeroAleatorio);
   document.getElementById("rendirse").disabled = false;
@@ -127,4 +128,5 @@ function tachar() {
       elemento.classList.toggle('line-through');
     });
   });
+  return;
 }

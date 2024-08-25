@@ -148,6 +148,11 @@ input.entrada {
 	justify-content: space-between;
 	font-size: 4vmin;
 }
+.ayuda > p {
+	letter-spacing: 1vmin;
+	font-size: 6vmin;
+	color: var(--main-color);
+}
 .line-through {
 	text-decoration: line-through;
 	color: var(--main-color);
