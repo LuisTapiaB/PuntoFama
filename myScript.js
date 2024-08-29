@@ -30,37 +30,6 @@ function nuevo() {
   intentos = 0;
   return numeroAleatorio;
 }
-/*
-function evaluar() {
-  famas = 0;
-  puntos = 0;
-  texto = document.getElementById("entrada").value;
-  k = numeroAleatorio[0];
-  l = numeroAleatorio[1];
-  m = numeroAleatorio[2];
-  n = numeroAleatorio[3];
-  if (a == k) {
-    famas += 1;
-  } else if (a == l || a == m || a == n) {
-    puntos+= 1;
-  }
-  if (b == l) {
-    famas += 1;
-  } else if (b == k || b == m || b == n) {
-    puntos += 1;
-  }
-  if (c == m) {
-    famas += 1;
-  } else if (c == l || c == k || c == n) {
-    puntos += 1;
-  }
-  if (d == n) {
-    famas += 1;
-  } else if (d == l || d == m || d == k) {
-    puntos += 1;
-  }
-}
-*/
 function evaluar() {
   famas = 0;
   puntos = 0;
@@ -120,6 +89,21 @@ function listar() {
   intentos += 1;
   document.getElementById("contadorIntentos").innerHTML = intentos;
 }
+//opción de función listar inyectando código
+/*function listar() {
+  texto = document.getElementById("entrada").value;
+  for (let i = 0; i < famas; i++) {
+    texto += " f ";
+  }
+  for (let i = 0; i < puntos; i++) {
+    texto += " * ";
+  }
+  html = document.getElementById("demo").innerHTML
+  html += `<p id="lista">${texto}</p>`;
+  document.getElementById("demo").innerHTML = html;
+  intentos += 1;
+  document.getElementById("contadorIntentos").innerHTML = intentos;
+}*/
 
 function tachar() {
   const tachados = document.getElementsByClassName('tachado');
