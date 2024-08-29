@@ -53,10 +53,7 @@ function rendirse() {
 }
 
 function comprobar() {
-  a = texto[0];
-  b = texto[1];
-  c = texto[2];
-  d = texto[3];
+  let [a,b,c,d] = texto;
   if (a == 0 && b == 0 && c == 0 && d == 0) {
     alert("escribe un numero para jugar ");
   } else if (a == b || a == c || a == d || b == c || b == d || c == d) {
