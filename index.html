@@ -12,14 +12,13 @@
     <header>
       <p id="titulo">Adivina el número</p>
     </header>
-    <section class="container">
-    <section class="box1">
+    <section class="container box1">
     
       <section class="main">
         <input type="text" class="entrada" id="entrada" min="0123" max="9999" value="" disabled>
         <div class="botones">
           <button id="nuevo" onclick="nuevo()">Juego Nuevo</button>
-          <button id="checar" onclick="evaluar(), comprobar(), listar()" disabled>Intento </button>
+          <button id="checar" onclick="comprobar()" disabled>Intento </button>
           <button id="rendirse" onclick="rendirse()" disabled>Me rindo </button>
         </div>
       </section>
@@ -36,28 +35,28 @@
           <p>Intento N°: </p>
           <p id="contadorIntentos" >0</p>
         </div>
-    
-      </section>
-      <section class="ayuda">
-        <p id="numeroSecreto" >xxxx</p>
-        <div>
-        <label class="tachado" for="checkbox0">0</label>
-        <label class="tachado" for="checkbox1">1</label>
-        <label class="tachado" for="checkbox2">2</label>
-        <label class="tachado" for="checkbox3">3</label>
-        <label class="tachado" for="checkbox4">4</label>
-        <label class="tachado" for="checkbox5">5</label>
-        <label class="tachado" for="checkbox6">6</label>
-        <label class="tachado" for="checkbox7">7</label>
-        <label class="tachado" for="checkbox8">8</label>
-        <label class="tachado" for="checkbox9">9</label>
         </div>
       </section>
-    </section>
-    <section class="aside">
-      <p id="demo"></p>
-      <!--aquí se crean los parrafos o span de intentos-->
-    </section>
+      <p id="numeroSecreto" >xxxx</p>
+      <section class="ayuda">
+        
+        <div>
+          <label class="tachado" for="checkbox0">0</label>
+          <label class="tachado" for="checkbox1">1</label>
+          <label class="tachado" for="checkbox2">2</label>
+          <label class="tachado" for="checkbox3">3</label>
+          <label class="tachado" for="checkbox4">4</label>
+          <label class="tachado" for="checkbox5">5</label>
+          <label class="tachado" for="checkbox6">6</label>
+          <label class="tachado" for="checkbox7">7</label>
+          <label class="tachado" for="checkbox8">8</label>
+          <label class="tachado" for="checkbox9">9</label>
+        </div>
+      </section>
+      <section class="aside">
+        <p id="demo"></p>
+        <!--aquí se crean los parrafos o span de intentos-->
+      </section>
     </section>
     <script src="myScript.js"></script>
 </body>
